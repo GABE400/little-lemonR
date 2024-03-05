@@ -1,0 +1,134 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px;
+  z-index: 1000;
+  background-color: var(--white);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--keep); /* Optional: Highlight color for the logo */
+}
+
+.navbar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a svg {
+  margin-right: 8px;
+}
+
+.navbar-links a:hover {
+  color: var(--keep);
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links a {
+    color: var(--white);
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet styles can be the same as mobile styles */
+  .navbar {
+    padding: 15px;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Adjust spacing if needed */
+  }
+
+  .navbar-links a {
+    color: var(--white);
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}

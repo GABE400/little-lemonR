@@ -1,0 +1,65 @@
+/* Footer.css */
+
+.footer {
+  background-color: var(--white-color);
+  color: var(--black);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-column {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--keep); /* Optional: Highlight color on hover */
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+  .footer-column {
+    width: 48%; /* Two columns */
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-column {
+    width: 30%; /* Three columns */
+  }
+}

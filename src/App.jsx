@@ -1,7 +1,15 @@
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar/Navbar";
+
 function App() {
   return (
     <>
-      <div>Little Lemon Restaurant</div>
+      <Navbar />
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }
