@@ -44,7 +44,7 @@ const Navbar = () => {
           </li>
           <li>
             {" "}
-            <a href='/contact'>
+            <a href='/booking'>
               <SlCalender /> Reservations
             </a>
           </li>

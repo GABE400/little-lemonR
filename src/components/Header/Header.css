@@ -1,0 +1,88 @@
+/* Header.css */
+#header-section {
+  background-color: var(--secondary-color);
+  height: 60vh;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 60%;
+  margin-top: 150px;
+}
+
+.left-section h2 {
+  color: var(--primary-color);
+}
+
+.left-section h3,
+p {
+  color: var(--white);
+}
+
+.right-section {
+  flex: 1;
+  margin-left: 20px;
+  position: relative;
+}
+
+.headerimg {
+  height: 430px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(20%);
+}
+
+.reserve-button {
+  background: var(--primary-color);
+  color: var(--black);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #header-section {
+    height: 100%;
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-section {
+    max-width: 100%;
+    margin-top: 60px;
+  }
+  .right-section {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .headerimg {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #header-section {
+    height: 58vh;
+  }
+
+  .left-section {
+    margin-top: 200px;
+    max-width: 100%;
+  }
+
+  .right-section {
+    max-width: 100%;
+    margin: 0;
+  }
+}

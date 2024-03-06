@@ -1,0 +1,20 @@
+/* Btn.css */
+
+.rounded-button {
+  border: 1px solid var(--keep);
+  border-radius: 12px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--dark-color);
+}
+
+/* Custom color classes */
+.yellow {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.text {
+  color: var(--dark-color);
+}
