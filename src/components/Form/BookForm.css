@@ -1,0 +1,40 @@
+#booking {
+  padding: 50px 0;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  grid-column: span 2;
+  border-radius: 12px;
+  padding: 10px 15px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+}
