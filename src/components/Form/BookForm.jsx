@@ -11,6 +11,16 @@ const BookForm = (props) => {
   const [occasion, setOccasion] = useState("");
   const [error, setError] = useState("");
 
+  // Simulated form submission (replace with your actual API endpoint)
+  const mockSubmit = async () => {
+    // Simulate a successful submission
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ ok: true });
+      }, 1000);
+    });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -21,21 +31,12 @@ const BookForm = (props) => {
     }
 
     try {
-      // Use the provided API to submit the form
-      const response = await fetch(
-        "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ date, times, guests, occasion }),
-        }
-      );
+      // Use the mockSubmit function to simulate form submission
+      const response = await mockSubmit();
 
       if (response.ok) {
         // If the submission is successful, navigate to the success page
-        navigate.push("/success");
+        navigate("/success");
       } else {
         setError("Failed to submit the form. Please try again.");
       }
@@ -71,7 +72,6 @@ const BookForm = (props) => {
               onChange={(e) => setTimes(e.target.value)}
             >
               <option value=''>Select Time:</option>
-              {/* Add your available times mapping here */}
               {props.availableTimes.map((availableTime) => (
                 <option key={availableTime}>{availableTime}</option>
               ))}
