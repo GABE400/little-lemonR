@@ -14,7 +14,9 @@ const Header = ({ title, subtitle, description }) => {
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
           <p>{description}</p>
-          <Btn text='Reserve a Table' color='yellow' />
+          <a href='/booking-page'>
+            <Btn text='Reserve a Table' color='yellow' />
+          </a>
         </div>
         <div className='right-section'>
           <img
