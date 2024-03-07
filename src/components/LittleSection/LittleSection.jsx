@@ -6,7 +6,7 @@ import MA from "../../assets/Mario and Adrian A.jpg";
 const LittleSection = ({ title, subtitle, description, image1, image2 }) => {
   return (
     <section id='little-section'>
-      <div className='little-section-container container'>
+      <div className='little-section-container '>
         {/* Left Column */}
         <div className='left-column'>
           <h2 className='section-title'>{title}</h2>

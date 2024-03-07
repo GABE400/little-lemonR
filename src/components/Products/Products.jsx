@@ -11,7 +11,7 @@ import Btn from "../Button/Btn";
 const Products = () => {
   return (
     <section id='products-section'>
-      <div className='product-container container'>
+      <div className='product-container'>
         <div className='header'>
           <h2>Ths Weeks Specials!</h2>
           <Btn text='Online Menu' color='yellow' />

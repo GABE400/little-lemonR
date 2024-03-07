@@ -33,7 +33,7 @@ const Testimonials = () => {
   return (
     <section id='testimonials'>
       <h2 className='testimonials-title'>Testimonials</h2>
-      <div className='testimonials-container container'>
+      <div className='testimonials-container'>
         {testimonialsData.map((testimonial) => (
           <div key={testimonial.id} className='testimonial-card'>
             <div className='ratings'>{testimonial.rating}/5</div>

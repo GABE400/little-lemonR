@@ -1,7 +1,7 @@
-import Header from "./components/Header/Header";
-import Main from "./components/Main";
+import Header from "../../components/Header/Header";
+import Main from "../../components/Main";
 
-function App() {
+const Home = () => {
   return (
     <>
       <Header
@@ -9,9 +9,12 @@ function App() {
         subtitle='Chicago'
         description='We are a family owned Mediterranean restaurant, focused on traditioned recipes served with a modern twist.'
       />
-      <Main />
+
+      <div className='container'>
+        <Main />
+      </div>
     </>
   );
-}
+};
 
-export default App;
+export default Home;
